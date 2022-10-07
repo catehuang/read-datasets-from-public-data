@@ -1,0 +1,119 @@
+html {
+    height: 100%;    
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    z-index: 1;
+    background-color: #29adad7a; 
+    color: #eaf8f8;
+    text-shadow: 1px 1px #29adad;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .3; 
+    z-index: -1;
+    background: url("background.jpg"); /*https://blog.usejournal.com/migrating-with-big-data-a74751b86ce1*/
+    background-repeat: repeat;
+}
+
+#welcome {
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: #29adade3;
+    border: 1px solid #eaf8f8;
+}
+
+.btn-group {
+    margin: 50px auto;
+    width: 50%;
+}
+
+.btn {
+    text-align: center;
+    background-color: #29adadc0;
+    border: 1px solid #ffffff; 
+    padding: 10px 10px; 
+    display: block;
+    text-decoration: none;
+    font-size: large;
+  }
+
+.btn:hover, .btn:focus, .btn:visited, .btn:active{
+    background-color: #6600ccd0;
+    color: #eaf8f8;
+  }
+
+#searchcondition {
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px 10% 20px 10%;
+    background-color: #29adadc0;
+    border: 1px solid #eaf8f8;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+#searchinfo1 {
+    padding: 20px 5px 10px 5px;
+}
+
+#searchinfo2 {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    padding: 10px 0;
+    visibility: hidden;
+    text-transform: uppercase;
+    background-color: #7c2bced0;
+    color: #ffffff;
+}
+
+#searchresults {
+    width: 80%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    border: 1px solid #eaf8f8; 
+    background-color: #29adadc0; 
+    border-collapse: collapse;;
+}
+
+#searchresults th {
+    background-color: #46cacad7;
+}
+
+a {
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #ffffff; 
+}
+
+a:hover {
+    font-weight: bold;
+    background-color: #6600ccd0;
+    color: #eaf8f8;
+    text-shadow: 1px 1px #6600cc;
+}
+
+input {
+    background-color: inherit;
+    color: inherit;
+    border: 1px solid #eaf8f8;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Public Art Collection</title>
+</head>
+<body>
+        <!--https://data.calgary.ca/resource/2kp2-hsy7.json-->
+
+    <form>
+        <table id="searchcondition">
+            <tr>
+                <th colspan="2"  id="searchinfo1">Search for Public Art Collection in Calgary</th>
+            </tr>
+            <tr>
+                <td><label>Art ID</label></td>
+                <td><input type="text"  onkeyup="searchData1ArtID(this.value);"></td>
+            </tr>
+            <tr>
+                <td><label>Tab Name</label></td>
+                <td><input type="text" onkeyup="searchData1TabName(this.value);"></td>
+            </tr>
+            <tr>
+                <td><label>Art Title</label></td>
+                <td><input type="text" onkeyup="searchData1ArtTitle(this.value);"></td>
+            </tr>
+            <tr>
+                <td><label>Artist</label></td>
+                <td><input type="text" onkeyup="searchData1Artist(this.value);"></td>
+            </tr>
+        </table>
+
+        <h4 id="searchinfo2"></h4>
+        <table id="searchresults"></table>        
+    </form>
+</body>
+</html>
